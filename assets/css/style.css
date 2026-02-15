@@ -904,3 +904,137 @@ align-items: center; }
 .last-div {
   height: 101px;
 }
+/*-----------------------------------*\
+  #CUSTOM STYLES FOR OM SINGHAL PORTFOLIO
+\*-----------------------------------*/
+
+/* Achievement Cards with Gradient Backgrounds */
+.about-card h3,
+.about-card h4 {
+  margin-bottom: 1rem;
+}
+
+.about-card .btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  transition: var(--transition-1);
+}
+
+.about-card .btn-text:hover {
+  gap: 1rem;
+}
+
+/* Skills Grid Styling */
+.skills-grid {
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: var(--transition-1);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.skill-category h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.skill-category ul li {
+  padding: 0.5rem 0;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+/* Achievement cards with better spacing */
+#achievements-sec .about-card {
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: var(--transition-1);
+  height: 100%;
+}
+
+#achievements-sec .about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Project Cards Enhancement */
+.project-card {
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: var(--transition-1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-tag {
+  font-weight: 700;
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+/* Statistics Display */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat-box {
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 150px;
+  transition: var(--transition-1);
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Icon styling for achievements */
+.card-icon ion-icon {
+  --ionicon-stroke-width: 35px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #achievements-sec .grid-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smooth animations for reveals */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+}
